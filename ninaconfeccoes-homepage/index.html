@@ -1,0 +1,298 @@
+<!-- aaeb6f4631df81a5 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Carregando...</title>
+    
+    <style>
+        :root {
+            --primary-color: #5D6E5C;
+            --secondary-color: #D4A5A5;
+            --accent-color: #C9A66B;
+            --text-dark: #2C332C;
+            --text-light: #6E7A6E;
+            --bg-light: #F7F4EE;
+            --white: #FFFFFF;
+            --border-radius: 8px;
+            --success-color: #7BA05B;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { color: var(--text-dark); background-color: var(--white); line-height: 1.6; scroll-behavior: smooth; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .qii8_nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px; }
+        .qii8_logo { font-size: 1.5rem; font-weight: 700; color: var(--primary-color); text-decoration: none; letter-spacing: 1px; }
+        .qii8_logo span { color: var(--secondary-color); }
+        .qii8_nav-menu { display: flex; list-style: none; gap: 20px; }
+        .qii8_nav-menu a { text-decoration: none; color: var(--text-light); font-weight: 500; transition: color 0.3s; }
+        .qii8_nav-menu a:hover { color: var(--secondary-color); }
+        .qii8_hero { background: linear-gradient(135deg, #F7F4EE 0%, #E8DED0 100%); padding: 80px 20px; text-align: center; }
+        .qii8_hero-content { max-width: 800px; margin: 0 auto; }
+        .qii8_hero h1 { font-size: 2.8rem; color: var(--primary-color); margin-bottom: 20px; }
+        .qii8_hero p { font-size: 1.2rem; color: var(--text-light); margin-bottom: 30px; }
+        .qii8_btn { display: inline-block; background-color: var(--primary-color); color: var(--white); padding: 15px 35px; border-radius: var(--border-radius); text-decoration: none; font-weight: 600; transition: background 0.3s, transform 0.2s; border: none; cursor: pointer; font-size: 1rem; }
+        .qii8_btn:hover { background-color: #48583B; transform: translateY(-2px); }
+        .qii8_collections-section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        .qii8_section-title { text-align: center; color: var(--primary-color); font-size: 2rem; margin-bottom: 15px; font-weight: 700; }
+        .qii8_section-subtitle { text-align: center; color: var(--text-light); max-width: 620px; margin: 0 auto 40px auto; font-size: 1.05rem; }
+        .qii8_collections-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; margin-top: 30px; }
+        .qii8_collection-card { background: var(--white); border: 1px solid #E5DDD0; border-radius: var(--border-radius); padding: 30px 25px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
+        .qii8_collection-card:hover { transform: translateY(-4px); box-shadow: 0 12px 20px rgba(0,0,0,0.08); }
+        .qii8_collection-icon { font-size: 2.5rem; margin-bottom: 15px; }
+        .qii8_collection-card h3 { color: var(--primary-color); font-size: 1.2rem; margin-bottom: 10px; }
+        .qii8_collection-card p { color: var(--text-light); font-size: 0.95rem; }
+        .qii8_trust-section { background-color: #F7F4EE; padding: 60px 20px; }
+        .qii8_trust-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .qii8_trust-card { background: var(--white); padding: 30px; border-radius: var(--border-radius); border: 1px solid #E5DDD0; box-shadow: 0 4px 12px rgba(0,0,0,0.01); border-top: 3px solid var(--accent-color); }
+        .qii8_trust-card h3 { color: var(--primary-color); margin-bottom: 12px; font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
+        .qii8_trust-card h3::before { content: "✓"; color: var(--secondary-color); font-weight: bold; font-size: 1.4rem; }
+        .qii8_trust-card p { color: var(--text-light); font-size: 0.95rem; }
+        .qii8_disclosure-section { background-color: var(--white); padding: 60px 20px; border-top: 1px solid #E5DDD0; }
+        .qii8_disclosure-container { max-width: 1200px; margin: 0 auto; }
+        .qii8_disclosure-table { width: 100%; border-collapse: collapse; margin: 25px 0; background: var(--white); border-radius: var(--border-radius); overflow: hidden; border: 1px solid #E5DDD0; }
+        .qii8_disclosure-table th, .qii8_disclosure-table td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #E5DDD0; }
+        .qii8_disclosure-table th { background-color: #EEE5D5; color: var(--primary-color); font-weight: 600; }
+        .qii8_disclosure-note { font-size: 0.85rem; color: var(--text-light); text-align: justify; background: var(--bg-light); padding: 20px; border-radius: var(--border-radius); border: 1px solid #E5DDD0; }
+        .qii8_contact-section { background: linear-gradient(135deg, var(--primary-color) 0%, #48583B 100%); color: var(--white); padding: 60px 20px; }
+        .qii8_contact-container { max-width: 550px; margin: 0 auto; }
+        .qii8_contact-form { background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: 0 10px 25px rgba(0,0,0,0.15); color: var(--text-dark); }
+        .qii8_form-group { margin-bottom: 20px; }
+        .qii8_form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--primary-color); font-size: 0.9rem; }
+        .qii8_form-group input, .qii8_form-group select, .qii8_form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #C9C0AB; border-radius: var(--border-radius); font-size: 1rem; outline: none; transition: border-color 0.3s; font-family: inherit; }
+        .qii8_form-group textarea { resize: vertical; min-height: 90px; }
+        .qii8_form-group input:focus, .qii8_form-group select:focus, .qii8_form-group textarea:focus { border-color: var(--secondary-color); }
+        .qii8_success-message { display: none; background-color: #EFF6E6; border: 2px solid var(--success-color); color: var(--primary-color); padding: 30px; border-radius: var(--border-radius); text-align: center; }
+        .qii8_success-message h3 { margin-bottom: 10px; color: #4C7332; }
+        footer { background-color: #2B3229; color: #B5B8A8; padding: 60px 20px 20px 20px; font-size: 0.9rem; border-top: 1px solid #5D6E5C; }
+        .qii8_footer-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .qii8_footer-brand h4 { color: var(--white); font-size: 1.2rem; margin-bottom: 15px; }
+        .qii8_footer-links h4, .qii8_footer-contact h4 { color: var(--white); margin-bottom: 15px; }
+        .qii8_footer-links ul { list-style: none; }
+        .qii8_footer-links ul li { margin-bottom: 10px; }
+        .qii8_footer-links ul li a { color: #B5B8A8; text-decoration: none; transition: color 0.3s; }
+        .qii8_footer-links ul li a:hover { color: var(--accent-color); }
+        .qii8_footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 30px; border-top: 1px solid #5D6E5C; text-align: center; font-size: 0.8rem; }
+        @media (max-width: 768px) {
+            .qii8_nav-container { flex-direction: column; gap: 15px; }
+            .qii8_hero h1 { font-size: 2rem; }
+            .qii8_disclosure-table { display: block; overflow-x: auto; }
+            .qii8_contact-form { padding: 25px; }
+        }
+    </style>
+
+<link rel="canonical" href="https://ninaconfeccoes.online/">
+<meta name="description" content="Acesse ninaconfeccoes.online para obter informações completas e atualizadas. Conteúdo exclusivo preparado para você.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ninaconfeccoes.online/">
+<meta property="og:site_name" content="ninaconfeccoes.online">
+<meta property="og:description" content="Acesse ninaconfeccoes.online para obter informações completas e atualizadas. Conteúdo exclusivo preparado para você.">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="ninaconfeccoes.online">
+<meta name="generator" content="cms-1fc035c7ef36">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Ninaconfeccoes","url":"https://ninaconfeccoes.online/","datePublished":"2024-06-25","dateModified":"2025-10-23","inLanguage":"pt-BR","isPartOf":{"@type":"WebSite","name":"Ninaconfeccoes","url":"https://ninaconfeccoes.online/"},"publisher":{"@type":"Organization","name":"Ninaconfeccoes","url":"https://ninaconfeccoes.online/"}}</script>
+
+<style>:root{--rmlw-p:rgb(72,80,118);--rmlw-s:rgb(253,228,10);--rmlw-id:'d7358ffe9462'}@keyframes xvqqpasg{from{opacity:1}to{opacity:1}}.becfzo{position:absolute;width:0;height:0;overflow:hidden;pointer-events:none}</style>
+<!-- b:q7o0v688d4 v2.90.571 -->
+</head>
+<body data-s="6f7dbdc4" data-p="l7io1y">
+<noscript><div style="padding:16px;text-align:center;font-size:13px;"><p>Ative o JavaScript para acessar todo o conteúdo de ninaconfeccoes.</p></div></noscript>
+    <header>
+        <nav class="qii8_nav-container">
+            <a href="#" class="qii8_logo" id="header-logo"></a>
+            <ul class="qii8_nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#colecoes">Coleções</a></li>
+                <li><a href="#confianca">Nossa Confecção</a></li>
+                <li><a href="#garantias">Etiquetagem e Trocas</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="qii8_hero" id="home">
+        <div class="qii8_hero-content">
+            <h1>Moda com Autoria, do Pari para o Brasil</h1>
+            <p id="hero-description"></p>
+            <a href="#contato" class="qii8_btn">Solicitar Catálogo</a>
+        </div>
+    </section>
+
+    <section class="qii8_collections-section" id="colecoes">
+        <h2 class="qii8_section-title">Nossas Coleções</h2>
+        <p class="qii8_section-subtitle">Peças desenvolvidas e confeccionadas por nós, com curadoria de modelagens, tecidos e caimentos — para consumidoras finais que passam pelo Pari e para revendedoras que buscam produção nacional com preço de fabricante.</p>
+        <div class="qii8_collections-grid">
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">👗</div><h3>Vestidos</h3><p>Vestidos midi, curtos e longos em malhas, viscose e tecido plano — do dia a dia ao evento, do PP ao GG, com modelagens exclusivas.</p></div>
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">👚</div><h3>Blusas e Camisetas</h3><p>Cropped, blusas de manga longa, regatas, camisetas básicas e estampadas — produção própria em algodão, viscolycra e crepe.</p></div>
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">👖</div><h3>Calças e Bermudas</h3><p>Calças wide leg, alfaiataria, legging e bermudas em diferentes modelagens e lavagens, desenvolvidas por nossa equipe de modelagem.</p></div>
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">🩱</div><h3>Conjuntos e Macacões</h3><p>Conjuntos de duas peças em tricô, moletom e tecido plano, macacões e macaquinhos — combinações prontas para diferentes ocasiões.</p></div>
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">🍂</div><h3>Coleções Sazonais</h3><p>Cápsulas de coleção lançadas a cada estação, com séries limitadas — verão, outono, inverno e primavera, sempre com tendências atualizadas.</p></div>
+            <div class="qii8_collection-card"><div class="qii8_collection-icon">🏷️</div><h3>Atacado para Revenda</h3><p>Programa dedicado a revendedoras e lojistas, com pedido mínimo acessível, catálogo digital atualizado e condições comerciais especiais.</p></div>
+        </div>
+    </section>
+
+    <section class="qii8_trust-section" id="confianca">
+        <h2 class="qii8_section-title">Nossa Confecção</h2>
+        <p class="qii8_section-subtitle">Desde 2021 no Pari, um dos maiores polos têxteis do país, unindo desenvolvimento de produto, modelagem e produção em uma mesma casa — com controle direto da qualidade de cada peça que sai da nossa oficina.</p>
+        <div class="qii8_trust-grid">
+            <div class="qii8_trust-card"><h3>Produção Própria e Controlada</h3><p>Confeccionamos internamente cada peça do nosso catálogo — desde a escolha do tecido até o acabamento e a inspeção final — garantindo padrão de caimento, medidas consistentes e prazo confirmado por escrito.</p></div>
+            <div class="qii8_trust-card"><h3>Etiquetagem em Conformidade</h3><p>Todas as peças acompanham etiqueta permanente com composição do tecido, tamanho, país de origem (Brasil) e símbolos de conservação, conforme a Portaria INMETRO nº 2/2008 e demais normas de etiquetagem têxtil.</p></div>
+            <div class="qii8_trust-card"><h3>Ponto no Coração do Pari</h3><p>Atendemos no Box 365 da Rua Tiers, no Pari, tradicional polo de confecções de São Paulo — atendimento presencial para clientes de balcão e programa dedicado para revendedoras de todo o Brasil.</p></div>
+        </div>
+    </section>
+
+    <section class="qii8_disclosure-section" id="garantias">
+        <div class="qii8_disclosure-container">
+            <h2 class="qii8_section-title">Etiquetagem, Trocas e Direitos</h2>
+            <p class="qii8_section-subtitle">Em conformidade com o Código de Defesa do Consumidor (Lei nº 8.078/1990) e com a Portaria INMETRO nº 2/2008, que regulamenta a etiquetagem obrigatória de produtos têxteis comercializados no Brasil:</p>
+            <table class="qii8_disclosure-table">
+                <thead><tr><th>Item</th><th>Condição / Prazo</th><th>Observações Adicionais</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Garantia Legal</strong></td><td><strong>30 dias</strong> a partir do recebimento</td><td>Prevista no art. 26 do CDC para vícios aparentes em produtos não duráveis, como peças de vestuário.</td></tr>
+                    <tr><td><strong>Etiquetagem Têxtil</strong></td><td>Portaria INMETRO nº 2/2008</td><td>Composição do tecido, tamanho, país de origem e símbolos de conservação impressos em etiqueta permanente.</td></tr>
+                    <tr><td><strong>Produção Nacional</strong></td><td>Confecção em São Paulo – Brasil</td><td>Peças produzidas em nossa oficina no Pari, com controle direto do processo e rastreabilidade dos lotes produzidos.</td></tr>
+                    <tr><td><strong>Troca por Tamanho ou Modelo</strong></td><td>Até <strong>7 dias</strong> após a compra</td><td>Peça sem uso, com etiqueta original e acompanhada da nota fiscal ou comprovante de compra.</td></tr>
+                    <tr><td><strong>Direito de Arrependimento</strong></td><td><strong>7 dias corridos</strong></td><td>Aplicável a compras realizadas fora do estabelecimento físico (art. 49 do CDC).</td></tr>
+                    <tr><td><strong>Peças Sob Encomenda</strong></td><td>Prazo pactuado no pedido</td><td>Produção de coleções para marcas terceiras (private label) e pedidos de grande volume seguem cronograma acordado por escrito.</td></tr>
+                    <tr><td><strong>Formas de Pagamento</strong></td><td>Dinheiro, cartão, PIX e boleto</td><td>Faturamento diferenciado disponível para revendedoras e lojistas cadastradas, sujeito a análise de crédito.</td></tr>
+                </tbody>
+            </table>
+            <div class="qii8_disclosure-note" id="disclosure-example-note"></div>
+        </div>
+    </section>
+
+    <section class="qii8_contact-section" id="contato">
+        <div class="qii8_contact-container">
+            <h2 class="qii8_section-title" style="color: var(--white);">Solicite o Catálogo</h2>
+            <p class="qii8_section-subtitle" style="color: #D5DBC8;">Preencha o formulário abaixo e uma consultora retornará em até 2 horas úteis com o catálogo da coleção, valores, prazos de produção e condições especiais para revenda.</p>
+            <form class="qii8_contact-form" id="lead-form">
+                <div class="qii8_form-group"><label for="form-name">Nome Completo</label><input type="text" id="form-name" placeholder="Ex: Ana Souza" required></div>
+                <div class="qii8_form-group"><label for="form-email">E-mail</label><input type="email" id="form-email" placeholder="Ex: ana@email.com" required></div>
+                <div class="qii8_form-group"><label for="form-phone">Telefone / WhatsApp</label><input type="tel" id="form-phone" placeholder="Ex: (11) 99999-0000" required></div>
+                <div class="qii8_form-group">
+                    <label for="form-intent">Tipo de Contato</label>
+                    <select id="form-intent" required>
+                        <option value="">Selecione uma opção...</option>
+                        <option value="varejo">Compra Individual (varejo)</option>
+                        <option value="atacado">Compra em Atacado / Revenda</option>
+                        <option value="privatelabel">Private Label / Marca Própria</option>
+                        <option value="colecao">Encomenda de Coleção Personalizada</option>
+                        <option value="catalogo">Solicitar Catálogo Digital</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <div class="qii8_form-group">
+                    <label for="form-category">Categoria de Interesse (opcional)</label>
+                    <select id="form-category">
+                        <option value="">Selecione uma categoria...</option>
+                        <option value="vestidos">Vestidos</option>
+                        <option value="blusas">Blusas e Camisetas</option>
+                        <option value="calcas">Calças e Bermudas</option>
+                        <option value="conjuntos">Conjuntos e Macacões</option>
+                        <option value="sazonais">Coleções Sazonais</option>
+                        <option value="mix">Mix de Peças</option>
+                    </select>
+                </div>
+                <div class="qii8_form-group"><label for="form-message">Detalhes do Pedido (opcional)</label><textarea id="form-message" placeholder="Descreva quantidade, grade de tamanhos, prazo desejado ou modelos de interesse..."></textarea></div>
+                <button type="submit" class="qii8_btn" style="width: 100%; margin-top: 10px;">Enviar Solicitação</button>
+            </form>
+            <div class="qii8_success-message" id="form-success">
+                <h3>✓ Solicitação Recebida com Sucesso!</h3>
+                <p>Olá, <strong id="user-name-span"></strong>. Seu contato foi registrado.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-light);">Uma de nossas consultoras entrará em contato em breve pelo canal indicado.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="qii8_footer-container">
+            <div class="qii8_footer-brand" id="footer-brand-info"></div>
+            <div class="qii8_footer-links">
+                <h4>Políticas e Termos</h4>
+                <ul>
+                    <li><a id="link-privacy" href="#" target="_blank">Política de Privacidade</a></li>
+                    <li><a id="link-terms" href="#" target="_blank">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="qii8_footer-contact" id="footer-contact-info"></div>
+        </div>
+        <div class="qii8_footer-bottom">
+            <p id="footer-correspondent-law"></p>
+            <p style="margin-top: 10px;">&copy; <span id="copyright-year"></span> <span id="copyright-legal-name"></span>. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const CONFIG = {
+            tradeName: "Nina Confecções",
+            legalName: "Nina MM Comercio e Confeccao LTDA",
+            cnpj: "41.272.025/0001-21",
+            address: "R. Tiers, 282, Box 365, Pari, São Paulo – SP, CEP 03031-000",
+            phone: "(11) 4801-6500",
+            email: "contato@ninaconfeccoes.com.br",
+            privacyUrl: "https://ninaconfeccoes.com.br/privacidade.html",
+            termsUrl: "https://ninaconfeccoes.com.br/termos.html",
+            segment: "Confecção e Comércio de Peças de Vestuário"
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('page-title').innerText = `${CONFIG.tradeName} | Confecção de Moda Feminina no Pari, São Paulo`;
+            document.getElementById('page-description').setAttribute('content', `${CONFIG.tradeName} — confecção com produção própria de vestuário no Pari, São Paulo. Vestidos, blusas, calças, conjuntos e coleções sazonais para varejo e atacado.`);
+            
+            const nameParts = CONFIG.tradeName.split(' ');
+            const firstWord = nameParts[0];
+            const restOfName = nameParts.slice(1).join(' ');
+            document.getElementById('header-logo').innerHTML = restOfName
+                ? `${firstWord}<span> ${restOfName}</span>`
+                : firstWord;
+
+            document.getElementById('hero-description').innerHTML = `Desde 2021 no Pari, um dos maiores polos têxteis do Brasil, desenhando e confeccionando peças de vestuário com produção própria — vestidos, blusas, calças, conjuntos e coleções sazonais para consumidoras finais e revendedoras que buscam preço de fabricante e caimento consistente.`;
+            
+            document.getElementById('disclosure-example-note').innerHTML = `<strong>Observações sobre produção, etiquetagem e trocas:</strong> <br> Todas as peças comercializadas pela ${CONFIG.tradeName} são produzidas em nossa oficina no Pari, com controle direto do processo desde o corte até o acabamento. As etiquetas permanentes trazem composição do tecido, tamanho, país de origem (Brasil) e símbolos de conservação (lavagem, secagem e passadoria), conforme a Portaria INMETRO nº 2/2008. Nosso CNAE principal é confecção de peças de vestuário, exceto roupas íntimas e peças sob medida — não trabalhamos com essas linhas. As trocas seguem os prazos previstos no Código de Defesa do Consumidor, cumulativos com a política comercial da casa. Peças em promoção ou de coleção sazonal seguem regras específicas informadas no ato da compra.`;
+
+            document.getElementById('footer-brand-info').innerHTML = `
+                <h4>${CONFIG.tradeName}</h4>
+                <p><strong>${CONFIG.legalName}</strong></p>
+                <p>CNPJ: ${CONFIG.cnpj}</p>
+                <br>
+                <p>Endereço: ${CONFIG.address}</p>
+            `;
+
+            document.getElementById('link-privacy').href = CONFIG.privacyUrl;
+            document.getElementById('link-terms').href = CONFIG.termsUrl;
+
+            document.getElementById('footer-contact-info').innerHTML = `
+                <h4>Atendimento</h4>
+                <p>Telefone: ${CONFIG.phone}</p>
+                <p>E-mail: <a href="mailto:${CONFIG.email}" style="color: #B5B8A8; text-decoration: none;">${CONFIG.email}</a></p>
+            `;
+
+            document.getElementById('footer-correspondent-law').innerHTML = `A <strong>${CONFIG.tradeName}</strong> (${CONFIG.legalName}) atua no ramo de ${CONFIG.segment.toLowerCase()}, em conformidade com o Código de Defesa do Consumidor (Lei nº 8.078/1990) e com a Portaria INMETRO nº 2/2008, que regulamenta a etiquetagem obrigatória de produtos têxteis comercializados no Brasil. Imagens meramente ilustrativas. Preços, prazos de produção e condições de pagamento estão sujeitos a confirmação no ato da compra.`;
+
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+            document.getElementById('copyright-legal-name').textContent = CONFIG.legalName;
+
+            initFormSubmission();
+        });
+
+        function initFormSubmission() {
+            const form = document.getElementById('lead-form');
+            const successBox = document.getElementById('form-success');
+            const userNameSpan = document.getElementById('user-name-span');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); 
+                const inputName = document.getElementById('form-name').value;
+                userNameSpan.innerText = inputName;
+                form.style.display = 'none';
+                successBox.style.display = 'block';
+            });
+        }
+    </script>
+<footer style="text-align:center;padding:18px 12px;font-size:11px;color:#aaa;margin-top:35px;border-top:1px solid #f0f0f0"><p>Ninaconfeccoes — Conteúdo exclusivo e verificado. © 2026 | Todos os direitos reservados. <a href="https://ninaconfeccoes.online/" style="color:#aaa;text-decoration:none">ninaconfeccoes.online</a></p></footer>
+</body>
+</html>
+
+<!-- 587332f104ea76a5fdb99134 -->
